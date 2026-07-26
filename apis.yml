@@ -1,7 +1,26 @@
 aid: ezra
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ezra.png
 name: Ezra
-description: Ezra is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Ezra (Ezra AI, Inc.) is a preventive-health company offering full-body
+  MRI and CT cancer-screening scans directly to consumers. Its screening service scans
+  up to 13 organs in as little as 22 minutes to detect early signs of cancer and hundreds
+  of other conditions without harmful radiation, with plans spanning a full-body MRI,
+  MRI with spine, a comprehensive skeletal/neurological MRI, and heart and lung CT
+  scans, plus couples pricing and locations across the United States. Ezra was surfaced
+  as a portfolio company of Seedcamp; this profile is a consumer healthcare company
+  with no public developer API, and was enriched via the API Evangelist pipeline against
+  its public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/ezra/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Medical Imaging
+- Preventive Health
+- Cancer Screening
+- MRI
+- Diagnostics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ezra-domain-security.yml
 - type: Website
-  url: http://ezra.com
+  url: https://ezra.com
+- type: Blog
+  url: https://ezra.com/blog
+- type: Pricing
+  url: https://ezra.com/pricing
+- type: SignUp
+  url: https://my.ezra.com/join
+- type: Support
+  url: https://ezra.com/faq
+- type: TermsOfService
+  url: https://ezra.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://ezra.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
